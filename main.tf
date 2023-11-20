@@ -2,7 +2,7 @@ terraform {
   backend "remote" {
     organization = "revdev"
     workspaces {
-      name = "learn-tf-cloud"
+      name = "bootstrap-workspace"
     }
   }
 }
