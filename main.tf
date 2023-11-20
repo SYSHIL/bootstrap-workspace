@@ -34,9 +34,9 @@ data "terraform_remote_state" "bootstrap" {
   }
 }
 
-# output "oauth_token_id" {
-#   value = data.tfe_oauth_client.client.oauth_token_id
-# }
+output "oauth_token_id" {
+  value = data.tfe_oauth_client.client.oauth_token_id
+}
 
 
 # resource "tfe_workspace" "example" {
