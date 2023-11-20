@@ -27,9 +27,9 @@ data "terraform_remote_state" "bootstrap" {
   backend = "remote"
 
   config = {
-    organization = "your-organization-name"
+    organization = "revdev"
     workspaces = {
-      name = "bootstrap"
+      name = "bootstrap-workspace"
     }
   }
 }
