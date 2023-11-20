@@ -18,21 +18,21 @@ resource "tfe_organization" "revdev" {
 
 
 
-# data "tfe_oauth_client" "client" {
-#   organization = "revdev"
-#   name         = "revdev"
-# }
+data "tfe_oauth_client" "client" {
+  organization = "revdev"
+  name         = "revdev"
+}
 
-# data "terraform_remote_state" "bootstrap" {
-#   backend = "remote"
+data "terraform_remote_state" "bootstrap" {
+  backend = "remote"
 
-#   config = {
-#     organization = "your-organization-name"
-#     workspaces = {
-#       name = "bootstrap"
-#     }
-#   }
-# }
+  config = {
+    organization = "your-organization-name"
+    workspaces = {
+      name = "bootstrap"
+    }
+  }
+}
 
 # output "oauth_token_id" {
 #   value = data.tfe_oauth_client.client.oauth_token_id
